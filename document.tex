@@ -1,5 +1,5 @@
 
-\documentclass[a4paper]{article}
+\documentclass[a4paper,10pt]{article}
 
 \usepackage[backgroundcolor=blue!10!white]{todonotes}
 \usepackage[top=2in, bottom=1.5in, left=1in, right=1in]{geometry}
@@ -21,7 +21,6 @@
 
 \bibliography{bib,sanja}
 
-
 %\usepackage{listings}
 \usepackage{tabularx}
 \usepackage{rotating}
@@ -29,12 +28,11 @@
 %\usepackage{longtable}
 \usepackage{booktabs}
 
-
 \title{
 %\Large{Bridging the Attitude-Behavior Gap in Household Energy Conservation}\\
 %\large{An Information-Based Intervention Approach to Facilitate the Behavior Change Process}
-\large{Facilitating the Behavior Change Process to Bridge the Attitude-Behavior Gap \\ in Household Energy Conservation}
-}
+Facilitating the Behaviour Change Process to Bridge the Attitude-Behaviour Gap in Household Energy Consumption: Intervention Design and Policy Implications}
+
 %\author{Your Name  \\
 %	Your Company / University  \\
 %	\and 
@@ -42,7 +40,7 @@
 %	His Company / University \\
 %	}
 
-\date{\today}
+\date{\small{\today}}
 % Hint: \title{what ever}, \author{who care} and \date{when ever} could stand 
 % before or after the \begin{document} command 
 % BUT the \maketitle command MUST come AFTER the \begin{document} command! 
@@ -51,19 +49,23 @@
 \maketitle
 
 \begin{abstract}
-The attitude-behavior gap in energy consumption refers to the imparity between people's environmental values (and attitudes) and their actual behavior in energy conservation. This paper calls for the facilitation of the \textit{behavior change process} that is implementable in the context of one's everyday life to address the attitude-behavior gap in household energy consumption. Two interrelated intervention design constructs are proposed based on the results of literature review, namely (1) providing consumers accurate information about actionable suggestions in the specific context of their everyday life, and (2) fostering consumers' motivation to engage in the behavior change process towards energy conservation. Concrete design elements are suggested and discussed with respect to each construct. They are followed by an intervention example that is co-designed with the users and stakeholders at the Stockholm (Sweden) and Trento (Italy) test sites of the EU FP7 CIVIS project. It is a hybrid mobile application which provides users easy access to adapt and follow up the process of voluntary behavior change in the busyness and competing priorities of their everyday life. 
+The attitude-behaviour gap in energy consumption refers to the imparity between people's environmental values (and attitudes) and their actual behavior in consumption. This paper calls for the facilitation of the \textit{behaviour change process} that is implementable in the context of one's everyday life to address the attitude-behaviour gap in household energy consumption. Two interrelated intervention design constructs are proposed based on the results of literature review, namely (1) providing consumers accurate information about actionable suggestions in the specific context of their everyday life, and (2) fostering consumers' motivation to engage in the behavior change process towards energy conservation. Concrete design elements are suggested and discussed with respect to each construct. They are followed by an intervention example that is co-designed with the users and stakeholders at the Stockholm (Sweden) and Trento (Italy) test sites of the EU FP7 CIVIS project. It is a hybrid mobile application which provides users easy access to adapt and follow up the process of voluntary behavior change in the busyness and competing priorities of their everyday life. 
 \end{abstract}
 
 \section{Introduction}
 \label{sec:intro}
 
-Environmentally significant behaviours should be understood as relatively inconspicuous actions performed in the context of everyday life \citep{Burgess2008}. People consume energy through many daily practices and routines in households \citep{Burgess2008,Hargreaves2010, Fehrenbacher2011,Burchell2014}. How and to what extent these daily actions affect domestic energy use and in turn the environment are not always readily apparent to average consumers \citep{Burgess2008,Delmas2013}. This knowledge deficit poses significant constraints for consumers to perform and engage in energy conservation (and energy efficiency) behaviors \citep{Schultz2002,Burchell2014}. Acquiring such information is often time consuming \citep{Delmas2013}. 
+%Environmentally significant behaviours should be understood as  relatively inconspicuous actions performed in the context of everyday life \citep{Burgess2008}. 
+People consume energy through many relatively inconspicuous actions in  daily household practices and routines \citep{Burgess2008,Hargreaves2010, Fehrenbacher2011,Burchell2014}. How and to what extent these daily actions affect energy use and in turn the environment are not always readily apparent to average consumers \citep{Burgess2008,Delmas2013}. This knowledge deficit poses significant constraints for consumers to perform and engage in energy conservation (and energy efficiency) behaviours, and acquiring such information is often time consuming \citep{Schultz2002,Delmas2013,Burchell2014}. 
+% 
+Information-based intervention strategies that aim at correcting such knowledge deficit have become more and more common \citep{Delmas2013}. 
+%The basic assumption underlying these interventions is that increasing knowledge of sustainable energy consumption behaviors will translate into behavior change towards more sustainable consumption \citep{Schultz2002,Delmas2013}. 
+% 
+In literature, two main types of information-based interventions are often studied: providing consumers with (I) feedback about the amount of their energy use and energy savings, and (II) information about energy conservation and efficiency measures (and tips). With the first type, feedback is conveyed by e.g. the amount of electricity in kWh, the estimated CO$_{2}$ emission induced, and the corresponding monetary cost \citep{Abrahamse2005}. Such information may draw comparisons to the past or to other users (i.e. historical feedback vs. comparative feedback), can be accompanied by rewards, explanatory or injunctive messages (e.g. the number of trees needed to compensate the CO$_{2}$ emission, smiley or frowny face emoticons, animated polar bears or trees reacting to energy use) \citep{Schultz2007,Mankoff2010, Petkov2011}, and is often delivered in different frequencies, typically through energy bills or emails, sometimes in near or quasi real-time by in-house displays or web applications \citep{Abrahamse2005,Delmas2013}. With the second type of intervention, the information about energy consumption measures can be communicated in many different ways e.g. through leaflets, billing, websites, workshops, campaigns, and tailored home audits \citep{Abrahamse2005,Delmas2013}. 
 
-Information-based intervention strategies that aim at correcting the knowledge deficit of energy conservation behavior have become more and more common \citep{Delmas2013}. The basic assumption underlying these interventions is that increasing knowledge of sustainable energy consumption behaviors will translate into behavior change towards more sustainable consumption \citep{Schultz2002,Delmas2013}. In literature, two main types of information-based intervention strategies are often studied: providing consumers with (1) feedback about the amount of their energy use and/or energy savings, and (2) information about energy conservation measures (and tips). With the first type of intervention, the energy use feedback is conveyed in terms of, e.g. electricity in kWh, the estimated CO$_{2}$ emission induced, and the corresponding monetary cost \citep{+}. Such information may draw comparisons to the past (i.e. historical feedback) or to other users (i.e. comparative feedback) \citep{+}, can be accompanied by rewards \citep{+}, explanatory or injunctive messages (e.g. the number of trees needed to compensate the CO$_{2}$ emission, smiley or frowny face emoticons, animated polar bears or trees reacting to energy use) \citep{Schultz2007,Mankoff2010, Petkov2011,+}, and is often delivered in different frequencies, typically through energy bills or emails, sometimes in near or quasi real-time by in-house displays or online applications \citep{+}. With the second type of intervention, the information about energy conservation measures can be communicated in many different ways, e.g. through leaflets, billing, websites, workshops, campaigns, and tailored home audits \citep{Abrahamse2005,Delmas2013,+}. 
+The experiments and field test results of those interventions have a high degree of variability across and sometimes also within the studies: some interventions have marginal significances or no observable differences, some are effective to different degrees, and some may even have negative effects \citep{Abrahamse2005,Delmas2013}. For example, simply providing energy conservation measures often do not sufficiently motivate consumers to conserve energy \citep{Delmas2013}. Tailored home audits are effective in a number of studies due to personalized and context-specific information \citep{+}. More frequent energy feedback are often reported to be more effective \citep{+}. Rewards can have a positive but rather short-lived effect \citep{+}. Monetary strategies do not necessarily affect energy consumption behaviour, and may even lead to relative increase in usage rather than induce conservation \citep{Delmas2013,Asensio2015}. 
 
-The experiments and field test results of those intervention strategies have a high degree of variability across and sometimes within the studies: some interventions have marginal significances or no observable difference, some are effective to different degrees, and some may even have negative effects \citep{Abrahamse2005,Delmas2013,+}. For example, simply providing energy conservation measures often do not sufficiently motivate consumers to conserve energy \citep{Delmas2013}. Tailored home audits are effective in a number of studies due to personalized and context-specific information \citep{+}. More frequent energy feedback are often reported to be more effective \citep{+}. Rewards can have a positive but rather short-lived effect \citep{+}. Monetary strategies do not necessarily affect energy consumption behavior, and may even lead to relative increase in usage rather than induce conservation \citep{Delmas2013,Asensio2015}. 
-
-In general, the rich body of empirical research suggests that relevant information tends to result in higher knowledge levels but not necessarily in behavior changes or energy savings \citep{Abrahamse2005,+}. Despite growing environmental awareness and articulated preference for ``green'' lifestyles, people's environmental values and attitudes often fail to materialize in actual environmental actions and behavior changes, from energy conservation, to recycling,  to the purchase of green/sustainable products \citep{Schultz2002,Abrahamse2005,Claudy2013}. This imparity is commonly referred to as the attitude-behavior gap or the value-action gap \citep{Blake1999,Kollmuss2002,Claudy2013}. 
+In general, the rich body of empirical research suggests that relevant information tends to result in higher knowledge levels but not necessarily in behaviour changes or energy savings \citep{Abrahamse2005,+}. Despite growing environmental awareness and articulated preference for ``green'' lifestyles, people's environmental values and attitudes often fail to materialize in actual environmental actions and behaviour changes, from energy conservation, to recycling,  to the purchase of green/sustainable products \citep{Schultz2002,Abrahamse2005,Claudy2013}. This imparity is commonly referred to as the attitude-behavior gap or the value-action gap \citep{Blake1999,Kollmuss2002,Claudy2013}. 
 
 There are information-based intervention strategies shown to be effective in some contexts, for some behaviors, and for some individuals; no single strategy stands out as being uniformly the most effective \citep{Schultz2014} since many determinants can frame and shape energy consumption behaviors (and voluntary changes), e.g, a consumer's prior knowledge, the type of information provided, how it is provided, and the context in which the information is communicated, to name just a few \citep{Delmas2013,+}. What is important is to match the strategies to the individuals, the behavior and the context \citep{Schultz2014}. 
 
@@ -300,7 +302,7 @@ This paper does not intend to suggest that facilitating the behavior change proc
 
 Our future research will follow through the proposed approach in the test sites deployment and its effect in the long term. Future research can also explore structural intervention strategies (\cite{Steg2008}, i.e. strategies that focus on altering the context in which action decisions are made so as to make energy conservation more attractive) in the direction of facilitating the behavior change process. 
 
-%\renewcommand{\bibfont}{\small}
+\renewcommand{\bibfont}{\small}
 \printbibliography
 
 \end{document}
